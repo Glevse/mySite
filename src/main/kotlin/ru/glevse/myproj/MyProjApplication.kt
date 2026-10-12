@@ -9,3 +9,5 @@ class MyProjApplication
 fun main(args: Array<String>) {
     runApplication<MyProjApplication>(*args)
 }
+
+
