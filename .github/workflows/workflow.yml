@@ -22,7 +22,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x gradlew
       - name: build with gradle
-        run: ./gradlew build -x test
+        run: ./gradlew bootJar
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
