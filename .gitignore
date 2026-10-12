@@ -39,5 +39,5 @@ out/
 ### Kotlin ###
 .kotlin
 
-/myfrontside/.nuxt
-/myfrontside/node_modules
+myfrontside/.nuxt/
+myfrontside/node_modules/
