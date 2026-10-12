@@ -38,3 +38,6 @@ out/
 
 ### Kotlin ###
 .kotlin
+
+/myfrontside/.nuxt
+/myfrontside/node_modules
