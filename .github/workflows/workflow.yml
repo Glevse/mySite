@@ -55,7 +55,7 @@ jobs:
         run: |
             sudo rm -rf /opt/myfront/.output
             sudo cp -r myfrontside/.output /opt/myfront/.output
-            sudo chown -R deploy:deploy /opt/myfront
+            sudo chown -R glevse:glevse /opt/myfront
             sudo systemctl restart myfront
             for i in $(seq 1 10); do
               [ "$(systemctl is-active myfront)" = "active" ] && exit 0
