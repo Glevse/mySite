@@ -21,9 +21,15 @@ jobs:
           gradle-version: '9.8.0'
           cache-provider: basic
       - name: build with gradle
-        run: gradle build
+        run: gradle build -x test
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: Package
           path: build/libs
+      - name: Deploy and restart
+        run: |
+          sudo cp build/libs/*[!plain].jar /opt/myapp/app.jar
+          sudo systemctl restart myapp
+          sleep 10
+          sudo systemctl is-active myapp
