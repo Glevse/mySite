@@ -3,7 +3,7 @@ import type { Locale } from '~/i18n/messages'
 
 /*
  * Rich project descriptions live in app/content/projects/<slug>.<lang>.md
- * (e.g. myproj.en.md, myproj.ru.md). They are bundled at build time.
+ * (e.g. glevse-site.en.md, glevse-site.ru.md). They are bundled at build time.
  */
 const files = import.meta.glob<string>('../content/projects/*.md', {
   query: '?raw',
@@ -13,7 +13,7 @@ const files = import.meta.glob<string>('../content/projects/*.md', {
 
 const sources = new Map<string, string>()
 for (const [path, text] of Object.entries(files)) {
-  const name = path.split('/').pop()!.replace(/\.md$/, '') // "myproj.en"
+  const name = path.split('/').pop()!.replace(/\.md$/, '') // "glevse-site.en"
   sources.set(name, text)
 }
 

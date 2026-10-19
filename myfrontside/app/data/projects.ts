@@ -12,16 +12,15 @@ export interface Project {
   url?: string
 }
 
-// Replace these placeholders with your real projects.
 export const projects: Project[] = [
   {
-    slug: 'myproj',
-    title: 'My own portfolio site',
+    slug: 'glevse-site',
+    title: 'my.glevse.site',
     description: {
-      en: 'This site: frontend on Nuxt.js deploy via Github Actions',
-      ru: 'Текущий сайт: фронтенд на Nuxt.js деплоится через Github Actions'
+      en: "The site you're on right now: a Nuxt frontend with light and dark themes and two languages, deployed automatically with GitHub Actions.",
+      ru: 'Сайт, на котором вы сейчас находитесь: фронтенд на Nuxt со светлой и тёмной темой и двумя языками, автоматически деплоится через GitHub Actions.'
     },
-    tags: ['Nuxt']
+    tags: ['Nuxt', 'Vue', 'TypeScript', 'GitHub Actions']
   }
 ]
 

@@ -1,6 +1,6 @@
 ## About
 
-This portfolio site. The frontend is built with **Nuxt** and deployed automatically
+The site you're reading right now. The frontend is built with **Nuxt** and deployed automatically
 with **GitHub Actions** on every push to `master`.
 
 ## Features
@@ -12,14 +12,14 @@ with **GitHub Actions** on every push to `master`.
 <!--
   Examples of what you can use here (delete the comment markers to try them):
 
-  Image (put the file in public/projects/myproj/):
-  ![Screenshot of the home page](/projects/myproj/home.png)
+  Image (put the file in public/projects/glevse-site/):
+  ![Screenshot of the home page](/projects/glevse-site/home.png)
 
   Link:
   [Source code](https://github.com/...)
 
   Video file:
-  <video src="/projects/myproj/demo.mp4" controls></video>
+  <video src="/projects/glevse-site/demo.mp4" controls></video>
 
   YouTube:
   <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
