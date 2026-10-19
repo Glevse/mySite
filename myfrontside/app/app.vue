@@ -1,21 +1,18 @@
-<template>
-<AppHeader />
-  <div class="container">
-    hi
-  </div>
-</template>
-<script>
+<script setup lang="ts">
+const { theme } = useColorTheme()
+const { locale, t } = useLocale()
 
+useHead({
+  htmlAttrs: {
+    lang: locale,
+    'data-theme': () => theme.value ?? undefined
+  },
+  meta: [{ name: 'description', content: () => t('site.description') }]
+})
 </script>
-<style>
-.container {
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  width: 100vw;
-  height: 90vh;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-</style>
+
+<template>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
+</template>
